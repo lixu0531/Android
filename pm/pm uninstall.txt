@@ -1,5 +1,3 @@
-
-cd /d D:\Tools
 adb shell pm uninstall --user 0 com.miui.SystemAdSolution12
 
 出现Success的结果，说明已经成功删除。
@@ -20,7 +18,3 @@ adb shell pm uninstall --user 0 com.miui.SystemAdSolution12
 游戏 com.xiaomi.gamecenter
 用户反馈 com.miui.bugreport
 音乐 com.miui.player
-
----------------------
-
-本文来自 asdfzxc54342 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/asdfzxc54342/article/details/75251467?utm_source=copy 
