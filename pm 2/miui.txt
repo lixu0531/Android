@@ -1,0 +1,26 @@
+
+cd /d D:\Tools
+adb shell pm uninstall --user 0 com.miui.SystemAdSolution12
+
+出现Success的结果，说明已经成功删除。
+
+同理，我们可以用adb shell pm uninstall –user 0 com.miui.analytics来删除Analytics这个系统程序。
+
+通过删除msa，我们可以告别小米流氓的通知栏广告。删除其他系统软件可以加快系统运行速度，现给出一些系统应用的包名，来供大家选择性的删除：
+
+
+小米钱包 com.mipay.wallet
+计算器 com.miui.calculator
+小米视频 com.miui.video
+天气 com.miui.weather2
+语音助手 com.miui.voiceassist
+搜索 com.android.quicksearchbox
+搜狗输入法小米版 com.sohu.inputmethod.sogou.xiaomi
+游戏服务 com.xiaomi.gamecenter.sdk.service
+游戏 com.xiaomi.gamecenter
+用户反馈 com.miui.bugreport
+音乐 com.miui.player
+
+---------------------
+
+本文来自 asdfzxc54342 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/asdfzxc54342/article/details/75251467?utm_source=copy 
