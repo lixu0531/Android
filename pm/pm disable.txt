@@ -5,7 +5,12 @@ adb shell pm disable-user com.xiaomi.gamecenter
 adb shell pm disable-user com.android.thememanager
 adb shell pm disable-user com.miui.weather2
 adb shell pm disable-user com.miui.voiceassist
- adb shell pm disable-user com.miui.hybrid
- adb shell pm disable-user com.mipay.wallet
- adb shell pm disable-user com.miui.yellowpage
- adb shell pm disable-user com.android.email
+adb shell pm disable-user com.miui.hybrid
+adb shell pm disable-user com.mipay.wallet
+adb shell pm disable-user com.miui.yellowpage
+adb shell pm disable-user com.android.email
+adb shell pm disable-user com.miui.player
+adb shell pm disable-user com.android.stk
+adb shell pm disable-user com.miui.virtualsim
+adb shell pm disable-user com.miui.bugreport
+adb shell pm disable-user com.sohu.inputmethod.sougou.xiaomi
