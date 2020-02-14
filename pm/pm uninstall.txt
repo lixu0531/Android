@@ -1,20 +1,34 @@
-adb shell pm uninstall --user 0 com.miui.SystemAdSolution12
+1.在手机上打开USB调试。
+打开“设置-我的设备-全部参数”，连续点击5次 “MIUI版本” ，打开“开发者选项”，然后返回并打开 “设置-更多设置-开发者选项”，打开“USB调试”,打开“USB调试(安全设置)”。
+2.在ADB文件夹，shift键+鼠标右键，在此处打开命令窗口打开cmd，输入adb devices 查看手机是否连接电脑.
+adb shell pm uninstall --user 0 应用包名 删除(据说恢复出厂设置APP还是在的)
 
-出现Success的结果，说明已经成功删除。
+显示Success，表示成功。
 
-同理，我们可以用adb shell pm uninstall –user 0 com.miui.analytics来删除Analytics这个系统程序。
+adb shell pm disable-user 应用包名 停用
 
-通过删除msa，我们可以告别小米流氓的通知栏广告。删除其他系统软件可以加快系统运行速度，现给出一些系统应用的包名，来供大家选择性的删除：
+显示disabled-user，表示成功。
 
-
-小米钱包 com.mipay.wallet
-计算器 com.miui.calculator
-小米视频 com.miui.video
-天气 com.miui.weather2
-语音助手 com.miui.voiceassist
-搜索 com.android.quicksearchbox
-搜狗输入法小米版 com.sohu.inputmethod.sogou.xiaomi
-游戏服务 com.xiaomi.gamecenter.sdk.service
-游戏 com.xiaomi.gamecenter
-用户反馈 com.miui.bugreport
-音乐 com.miui.player
+adb shell pm enable 应用包名 启用
+如停用全球上网在cmd输入adb shell pm uninstall --user 0 com.miui.virtualsim ，注意空格。（adb空格shell空格pm uninstall空格--user空格0空格）
+3.MIUI10，设置，应用管理，应用，右上角?，可以看到应用包名。
+下面是我的手机（miui10）用adb精简列表。删除的不需要的，不确定的或者有时候需要的建议停用。各人按需要删除或停用。
+com.miui.virtualsim 全球上网
+com.android.email 电子邮件
+com.miui.backup 备份
+com.miui.notes 便签
+com.miui.hybrid 快应用
+com.miui.hybrid.accessory 快应用服务
+com.xiaomi.scanner 扫一扫
+com.android.quicksearchbox 搜索
+com.miui.voiceassist 小爱同学
+com.miui.player 音乐
+com.miui.video 视频
+com.miui.backup 备份
+com.miui.cloudbackup 桌面备份
+com.miui.bugreport 用户反馈
+com.miui.touchassistant 悬浮球
+com.android.printspooler 打印处理服务
+com.android.bips 默认打印服务
+com.xiaomi.gamecenter 游戏
+com.xiaomi.game
